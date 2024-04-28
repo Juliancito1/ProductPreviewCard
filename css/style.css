@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+p{
+    font-size: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 991px)
+{
+
+    .card{
+        max-width: 350px;
+        max-height: auto;
+        
+    }
+    
+    .imgCard{
+        content: url(../img/image-product-mobile.jpg);
+        object-fit: cover;
+        height: 100px !important;
+    }
+
+    .btnContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .btn{
+        width: 90%;
+        padding: 10px 0 10px 0;
+        background-color: hsl(158, 36%, 37%);
+    }
+    
+    
+    .card-title{
+        font-family: 'Fraunces',sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-right: 25px;
+    }
+    
+    .priceText{
+        font-size: 35px;
+        font-weight: 700;
+        font-family: 'Fraunces';
+        color: hsl(158, 36%, 37%);
+    }
+    
+    .previousPrice{
+        color: hsl(228, 12%, 48%);
+        font-size: 13px;
+        margin-top: 10px !important;
+    }
+    
+    .card-text{
+        color: hsl(228, 12%, 48%);
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 992px)
+{
+
+    .card{
+        max-width: 600px;
+        max-height: 450px;
+        
+    }
+
+    .imgCard{
+        content: url(../img/image-product-desktop.jpg);
+    }
+
+    
+    
+    .btn{
+        width: 230px;
+        padding: 10px;
+        margin-top: 30px;
+        background-color: hsl(158, 36%, 37%);
+    }
+    
+    
+    .card-title{
+        font-family: 'Fraunces',sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-right: 25px;
+    }
+    
+    .priceText{
+        font-size: 35px;
+        font-weight: 700;
+        font-family: 'Fraunces';
+        color: hsl(158, 36%, 37%);
+    }
+    
+    .previousPrice{
+        color: hsl(228, 12%, 48%);
+        font-size: 13px;
+        margin-top: 10px !important;
+    }
+    
+    .card-text{
+        color: hsl(228, 12%, 48%);
+        margin-right: 10px;
+    }
+}
