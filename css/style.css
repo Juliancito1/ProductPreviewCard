@@ -15,7 +15,7 @@ p{
     font-size: 14px;
 }
 
-@media (min-width: 320px) and (max-width: 991px)
+@media (min-width: 320px) and (max-width: 767px)
 {
 
     .card{
@@ -28,6 +28,58 @@ p{
         content: url(../img/image-product-mobile.jpg);
         object-fit: cover;
         height: 100px !important;
+    }
+
+    .btnContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .btn{
+        width: 90%;
+        padding: 10px 0 10px 0;
+        background-color: hsl(158, 36%, 37%);
+    }
+    
+    
+    .card-title{
+        font-family: 'Fraunces',sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-right: 25px;
+    }
+    
+    .priceText{
+        font-size: 35px;
+        font-weight: 700;
+        font-family: 'Fraunces';
+        color: hsl(158, 36%, 37%);
+    }
+    
+    .previousPrice{
+        color: hsl(228, 12%, 48%);
+        font-size: 13px;
+        margin-top: 10px !important;
+    }
+    
+    .card-text{
+        color: hsl(228, 12%, 48%);
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+
+    .card{
+        max-width: 600px;
+        max-height: 450px;
+    }
+    
+    .imgCard{
+        content: url(../img/image-product-desktop.jpg);
+        object-fit: cover;
+        height: 400px !important;
     }
 
     .btnContainer{
